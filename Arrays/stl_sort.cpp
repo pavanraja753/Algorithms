@@ -4,6 +4,13 @@
 #include<algorithm>
 using namespace std;
 
+// Define A comparator functino
+
+bool compare(int a, int b) {
+	cout << "Comparing" << a << " and " << b << endl;
+	return a >b;
+}
+
 
 int main() {
 
@@ -17,7 +24,7 @@ int main() {
 	}
 
 	// Sort an array using sort() function
-	sort(a, a+n);  // this is efficient implementation
+	sort(a, a+n, compare);  // this is efficient implementation
 
 
 	//printing array
